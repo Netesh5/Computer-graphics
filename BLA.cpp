@@ -13,7 +13,7 @@ int main(){
     int dy=y2-y1;
     m=dy/dx;
     putpixel(x1,y1,YELLOW);
-    if(m>0){
+    if(m>0){ // to check slope is positive or negative
         if(fabs(m)>1){
             p0=2*dx-dy;
             while(x1!=x2 && y1!=y2){
@@ -49,7 +49,7 @@ int main(){
             }
         }
     }
-    else if(m<0){
+    else if(m<0){ // to check slope is positive or negative
         if(fabs(m)>1){
             p0=2*dx-dy;
             while(x1!=x2 && y1!=y2){
